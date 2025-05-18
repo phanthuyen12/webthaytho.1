@@ -1,0 +1,69 @@
+.performance-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+}
+.blue-background {
+    background: radial-gradient(
+      circle at 80% center, /* Dời tâm sang phải */
+      rgba(235, 242, 245, 1) 0%,
+      rgba(190, 221, 236, 1) 30%,
+      rgba(255, 255, 255, 1) 90%
+    );
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+.performance-title {
+  color: #841617;
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.performance-subtitle {
+  color: #323232;
+  font-family: "Raleway-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.performance-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Card Styles */
+.group-146 {
+  height: 450px;
+  position: relative;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+}
+
+.rectangle-15 {
+  background: #ffffff;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 4px 8px 24px -1px rgba(0, 0, 0, 0.37);
+}
+
+
+/* Thêm các media queries vào cuối file CSS hiện tại */

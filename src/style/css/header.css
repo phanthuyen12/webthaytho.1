@@ -1,0 +1,121 @@
+/* Bỏ đường viền mặc định của các liên kết */
+.stay-with-us,
+.stay-with-us * {
+  box-sizing: border-box;
+}
+
+.stay-with-us {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  height: auto;
+  padding: 5px;
+  text-decoration: none; /* Bỏ gạch chân */
+  border: none; /* Bỏ viền khi có focus hoặc khi nhấn */
+}
+
+.stay-with-us:hover {
+  color: #4a4a4a; /* Màu khi hover */
+}
+
+/* Đảm bảo không có viền khi thẻ <a> được focus */
+.stay-with-us:focus {
+  outline: none; /* Loại bỏ đường viền focus mặc định */
+}
+/* Header Container */
+/* Header Container */
+header {
+  height: 50px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: visible; /* Cho phép logo tràn ra ngoài */
+}
+
+header img {
+    height: 270px;
+    object-fit: contain;
+    position: absolute;
+    top: -105px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.stay-with-us {
+  color: #000000;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 24px; /* Tăng kích thước chữ */
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.stay-with-us:hover {
+  color: #841617; /* Màu đỏ brand khi hover */
+}
+
+.stay-with-us::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #841617;
+  transition: width 0.3s ease;
+}
+
+.stay-with-us:hover::after {
+  width: 100%;
+}
+
+/* Responsive Design */
+
+/* header.css */
+
+/* Giữ nguyên các style hiện có */
+.stay-with-us,
+.stay-with-us * {
+  box-sizing: border-box;
+}
+
+.stay-with-us {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 28px; /* Tăng từ 18px lên 28px */
+  font-weight: 600;
+  position: relative;
+  height: auto;
+  padding: 10px 15px; /* Tăng padding để menu rộng hơn */
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.stay-with-us:hover {
+  color: #4a4a4a;
+  transform: scale(1.05); /* Thêm hiệu ứng phóng to nhẹ khi hover */
+}
+
+.stay-with-us:focus {
+  outline: none;
+}
+
+/* Thêm style cho header để căn chỉnh tốt hơn */
+header {
+  padding: 30px 5%; /* Tăng padding */
+}
+

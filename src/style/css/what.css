@@ -1,0 +1,89 @@
+.what-container {
+    padding: 80px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .what-heading {
+    color: #841617;
+    font-family: "Raleway-ExtraBold", sans-serif;
+    font-size: 140px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+ .benefits-we-do {
+    margin-top: -60px;
+    position: absolute;
+    /* top: -200px; */
+    color: #ffffff;
+    text-align: center;
+    font-family: "HolidayFree", sans-serif;
+    font-size: 105px;
+    font-weight: 400;
+    position: relative;
+    /* height: 565px; */
+    -webkit-text-stroke: 1px #000000;
+}
+  .what-description {
+    color: #323232;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto 60px;
+  }
+  
+  .what-description-regular {
+    font-family: "Raleway-Regular", sans-serif;
+  }
+  
+  .what-description-bold {
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: 700;
+  }
+  
+  .what-button-container {
+    margin-top: 60px;
+  }
+  
+  .what-button {
+    background: #323232;
+    color: #ffffff;
+    font-family: "Raleway-ExtraBold", sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    border: none;
+    border-radius: 60px;
+    padding: 25px 80px;
+    box-shadow: 8px 16px 24px -1px rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .what-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 8px 19px 28px -1px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .blue-background,
+.blue-background * {
+  box-sizing: border-box;
+}
+/* .blue-background {
+  background: radial-gradient(
+    closest-side,
+    rgba(235, 242, 245, 1) 0%,
+    rgba(190, 221, 236, 1) 0%,
+    rgba(255, 255, 255, 1) 99.03846383094788%
+  );
+  border-radius: 268px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  height: 11236px;
+  position: relative;
+  box-shadow: 8px 16px 24px -1px rgba(0, 0, 0, 0.37);
+} */

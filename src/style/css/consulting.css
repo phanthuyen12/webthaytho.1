@@ -1,0 +1,26 @@
+/* Slider Arrow Styles */
+.slick-prev:before,
+.slick-next:before {
+  color: #841617 !important;
+  font-size: 24px !important;
+}
+
+.slick-prev {
+  left: -35px !important;
+}
+
+.slick-next {
+  right: -35px !important;
+}
+
+/* Dot Styles */
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #841617 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #841617 !important;
+}
+
+

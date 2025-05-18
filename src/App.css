@@ -1,0 +1,147 @@
+body {
+  padding: 50px 0; /* 50px cho trên và dưới, 20px cho trái và phải */
+  margin: 0; /* Đảm bảo không có margin mặc định */
+  background-color: #ffffff; /* Thêm màu nền để thấy rõ viền bo tròn */
+}
+.App2{
+  background-color: #ffffff; /* Thêm màu nền để thấy rõ viền bo tròn */
+
+}
+@media screen and (min-width: 1280px) {
+
+
+.every-property-neighborhood-and-owner-are-different{
+  width: 600px;
+}
+.your-needs {
+    margin-top: 20px;
+    color: #841617;
+    text-align: left;
+    font-family: "HolidayFree", sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 40px;
+  } 
+}
+ .unmatched-value{
+    margin-top: -30px;
+    padding-top: -50px;
+    font-size: 25px;
+  }
+.blue-background,
+.blue-background * {
+  box-sizing: border-box;
+}
+
+.blue-background {
+  background: radial-gradient(
+    circle at 80% center, /* Dời tâm sang phải */
+    rgba(235, 242, 245, 1) 0%,
+    rgba(190, 221, 236, 1) 30%,
+    rgba(255, 255, 255, 1) 90%
+  );
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+.container-fx{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+body, html {
+  overflow-x: hidden;
+}
+.App2 {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("./assets/font/Raleway-Bold.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("./assets/font/Raleway-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}@font-face {
+  font-family: "HolidayFree";
+  src: url("./assets/font/holidayfree.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("./assets/font/Raleway-ExtraBold.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("./assets/font/Raleway-Light.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media (max-width: 1024px) {
+  .maximize-your-rental-income {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .optimize-your-listing {
+    font-size: 30px;
+  }
+  .rectangle-description{
+    font-size: 23px;
+  }
+  
+}
+
+/* Từ 1025px đến 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  
+  .maximize-your-rental-income {
+    font-size: 50px;
+    line-height: 1.2; /* thêm nếu muốn khác */
+  }
+
+.rectangle-container1{
+  margin-top: -100px;
+}
+       .who {
+        margin-top: -50px;
+    }
+    
+
+}
+@media (min-width: 1441px) and (max-width: 1919px) {
+ .optimize-your-listing {
+    font-size: 30px;
+  }
+  .rectangle-description{
+    font-size: 18px;
+  }
+  .maximize-your-rental-income {
+    font-size: 80px;
+    line-height: 1.2; /* thêm nếu muốn khác */
+  }
+ .rectangle-container1{
+  margin-top: -100px;
+ }
+       .who {
+        margin-top: -50px;
+    }
+}

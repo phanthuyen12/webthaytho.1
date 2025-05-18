@@ -1,0 +1,609 @@
+@font-face {
+  font-family: "HolidayFree";
+  src: url("../../assets/font/holidayfree.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("../../assets/font/Raleway-ExtraBold.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../../assets/font/Raleway-Bold.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.why-section {
+  padding-top: 100px;
+  padding-bottom: 5rem; /* hoặc bạn có thể đổi giá trị này */
+  min-height: 100vh;
+  display: flex;
+  margin-top: -100px;
+  align-items: center;
+}
+
+
+.why-container {
+  
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  padding: 130px 1rem 0; /* top right/left bottom */
+}
+
+/* Header Styles */
+.why-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.why-title {
+  color: #841617;
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-size: 140px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+/* Logo Styles */
+.why-logo-container {
+  text-align: center;
+  margin-top: 10px; /* khoảng cách giữa chữ WHY và logo */
+  margin-bottom: 4rem;
+}
+
+.why-main-logo {
+  margin-top: -299px;
+  width: 600px;        /* hoặc tăng lên nếu muốn logo to hơn */
+  height: auto;
+  max-height: none;    /* bỏ giới hạn chiều cao cũ nếu có */
+}
+
+/* Gallery Styles */
+.why-gallery {
+  margin-top: -200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+
+
+/* Stair-step Tagline Styles */
+.why-tagline-stair {
+  display: flex;
+  flex-direction: column;
+  margin: 10rem 0;
+}
+
+.tagline-row {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.text1{
+  margin-left: 200px;
+}
+.tagline-item {
+  margin-top: 20px;
+  padding: 1rem 2rem;
+  /* background-color: white; */
+  /* border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  z-index: 1;
+}
+.Results-text{
+  margin-left: 500px;
+}
+
+.tagline-item h2 {
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #323232;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.tagline-spacer {
+  width: 4rem;
+  height: 1px;
+}
+
+/* Specific positioning for each item */
+.tagline-item.first {
+  margin-left: 0;
+}
+
+.tagline-item.second {
+  margin-left: 15rem;
+}
+
+.tagline-item.third {
+  margin-left: 30rem;
+}
+
+
+
+
+
+
+.testimonial-section {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  width: 1000px; /* Chiều rộng cố định */
+  height: 40vh; /* Chiều cao tùy chỉnh */
+  margin: 0 auto; /* Căn giữa theo chiều ngang */
+  padding: 0 20px;
+  background: #F3EFE9;
+}
+
+
+
+.gradient-overlay {
+  position: absolute;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.35) 65%, transparent);
+  border-radius: 30px;
+  box-shadow: 4px 8px 24px -1px rgba(0,0,0,0.15);
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 2;
+  padding: 0 20px; /* CHUYỂN padding trái/phải vào đây */
+  margin: 0 auto;
+}
+
+.quote-mark {
+  color: #EFECE7;
+  font: 200 200px "Raleway";
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  z-index: -1;
+}
+
+.testimonial-text {
+  margin-top: 10px;
+  padding-top: 50px;
+  font: italic 500 32px/1.4 "Raleway";
+  color: #9E9C9C;
+  margin: 0 0 40px 80px;
+  max-width: 800px;
+}
+
+.testimonial-emphasis {
+  font-weight: 700;
+  color: #323232;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px 80px;
+}
+
+.client-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  margin-right: 20px;
+}
+
+.client-name {
+  font: 500 24px "Raleway";
+  color: #9E9C9C;
+  margin-bottom: 8px;
+}
+
+.client-stats {
+  font: 500 18px/1.4 "Raleway";
+  color: #9E9C9C;
+}
+
+.testimonial-nav {
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+  margin-left: 80px;
+}
+
+.nav-button {
+  font: 600 18px "Raleway";
+  color: #1E1E1E;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 2px 4px 12px -1px rgba(0,0,0,0.1);
+}
+
+.nav-button:hover {
+  background: #323232;
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+.testimonial-nav{
+  margin-top: 20px;
+}
+.right-people-container {
+  display: flex;
+  align-items: center;
+}
+
+.right,
+.right * {
+  box-sizing: border-box;
+}
+.right {
+  color: #841617;
+  text-align: left;
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  position: relative;
+  height: 25px;
+  -webkit-text-stroke: 1px #000000;
+  line-height: 25px; /* Để text căn giữa theo chiều dọc */
+}
+
+.people,
+.people * {
+  box-sizing: border-box;
+}
+.people {
+  text-align: left;
+  font-family: "HolidayFree", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  position: relative;
+  color: #ffffff;
+  height: 25px;
+  -webkit-text-stroke: 1px #000000;
+  line-height: 25px; /* Để text căn giữa theo chiều dọc */
+}
+
+.gallery-item {
+  width: fit-content; /* hoặc đặt kích thước cụ thể nếu bạn biết */
+}
+
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+.gallery-img {
+  width: 350px;
+  height: auto;
+  border-radius: 80px;
+  object-fit: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(188, 220, 235, 0.58); /* màu đỏ mờ */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* tránh chặn sự kiện chuột nếu cần */
+}
+
+.img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.unmatched-value {
+  position: relative;
+  top: 100px;
+  color: #323232;
+  text-align: center;
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.our-comprehensive-plans-start-from-just-8-fee-which-can-t-be-found-elsewhere {
+  color: #1e1e1e;
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  top: 120px;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2; /* Đảm bảo phần này hiển thị trên lớp phủ */
+}
+.let-s-talk{
+  width: 200px;
+  height: 50px;
+  color: #EFECE7;
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 140px;
+  border-radius: 20px;
+  justify-self: center;
+  background-color: #1E1E1E;
+}
+
+
+
+.highlighted-word {
+  background-color: #BCDCEB;
+  border-radius: 8px;
+  padding: 0 4px;
+}
+@media (max-width: 1024px) {
+  .tagline-item.second {
+    margin-left: 2rem;
+  }
+  
+  .tagline-item.third {
+    margin-left: 9rem;
+  }
+  .tagline-item.second {
+    margin-left: 2rem;
+}
+.tagline-item.third {
+    margin-left: 9rem;
+}
+  .why-container {
+
+  padding: 100px 50px 0 50px; /* top right bottom left */
+  margin: 0 auto;
+  width: calc(100% - 80px);
+}
+
+  /* Đảm bảo các phần tử con không vượt quá kích thước container */
+  .why-gallery,
+  .why-tagline-stair,
+  .testimonial-section {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .unmatched-value{
+    margin-top: -30px;
+    padding-top: -50px;
+    font-size: 30px;
+  }
+  .rectangle-31 {
+    width: 200px;
+    padding-top: 15px;
+    height: 60px;
+ background: #323232;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 39px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 8px 16px 24px -1px rgba(0, 0, 0, 0.37);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+    font-size: 19px;
+  }
+  .our-comprehensive-plans-start-from-just-8-fee-which-can-t-be-found-elsewhere{
+    font-size: 12px;
+  }
+  .gallery-img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+.right {
+    color: #841617;
+    text-align: left;
+    font-family: "Raleway-ExtraBold", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    position: relative;
+    height: 25px;
+    -webkit-text-stroke: 1px #000000;
+    line-height: 25px;
+}
+.people {
+    text-align: left;
+    font-family: "HolidayFree", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    position: relative;
+    color: #ffffff;
+    height: 25px;
+    -webkit-text-stroke: 1px #000000;
+    line-height: 25px;
+}
+.people1{
+  margin-top: -10px;
+  margin-left: 150px;
+}
+.people2{
+  margin-top: -10px;
+  margin-left: 370px;
+}
+}
+
+
+
+
+
+.testimonial-container.three-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+.testimonial-item.side .testimonial-text {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.testimonial-item {
+  max-width: 800px;
+
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.6;
+  cursor: default;
+}
+
+.testimonial-item.center {
+  max-width: 800px;
+  border-radius: 40px;
+  padding: 30px;
+  height: 460px;
+  opacity: 1;
+  transform: scale(1.05);
+  cursor: default;
+}
+
+.testimonial-item.side {
+  max-width: 280px;
+    border-radius: 40px;
+
+  opacity: 0.6;
+  transform: scale(0.9);
+}
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.tagline-item {
+  animation: fadeSlideIn 4s ease-in-out infinite;
+}
+
+/* Delay theo từng dòng để tạo bậc thang và lặp lại */
+.tagline-item.first {
+  animation-delay: 0s;
+}
+
+.tagline-item.second {
+  animation-delay: 5s;
+}
+
+.tagline-item.third {
+  animation-delay: 9s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Why.css */
+.why-gallery {
+  padding: 2rem 0;
+}
+
+.gallery-item {
+  padding: 0 10px; /* Khoảng cách giữa các item */
+  height: 400px; /* Chiều cao cố định */
+}
+
+.img-wrapper {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.unmatched-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 450px;
+    padding: 0 10px;
+  }
+  /* .our-comprehensive-plans-start-from-just-8-fee-which-can-t-be-found-elsewhere{
+    display: none;
+
+  } */
+  .unmatched-value {
+    font-size: 1.2rem;
+  }
+  
+
+}
