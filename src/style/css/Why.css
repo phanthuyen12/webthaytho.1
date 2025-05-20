@@ -53,6 +53,19 @@
   margin: 0;
   letter-spacing: 0.05em;
 }
+.client-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Logo Styles */
 .why-logo-container {
@@ -237,6 +250,7 @@
 .nav-button {
   font: 600 18px "Raleway";
   color: #1E1E1E;
+  width: 140px;
   background: transparent;
   border: 2px solid #000;
   border-radius: 50px;
@@ -353,17 +367,21 @@
   z-index: 2; /* Đảm bảo phần này hiển thị trên lớp phủ */
 }
 .let-s-talk{
-  width: 200px;
-  height: 50px;
-  color: #EFECE7;
-  padding: 5px;
-  font-size: 25px;
-  text-align: center;
+  background: #323232;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 39px;
+  width: 161px;
+  /* height: 80px; */
+  margin: 20px auto;
+  display: block;
+  box-shadow: 8px 16px 24px -1px rgba(0, 0, 0, 0.37);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
   position: relative;
   top: 140px;
-  border-radius: 20px;
-  justify-self: center;
-  background-color: #1E1E1E;
+ 
 }
 
 
@@ -408,23 +426,21 @@
     font-size: 30px;
   }
   .rectangle-31 {
-    width: 200px;
-    padding-top: 15px;
-    height: 60px;
  background: #323232;
   border-radius: 30px;
   color: #ffffff;
   font-size: 39px;
+  width: 121px;
+  /* height: 80px; */
   margin: 20px auto;
   display: block;
   box-shadow: 8px 16px 24px -1px rgba(0, 0, 0, 0.37);
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease;
-    font-size: 19px;
   }
   .our-comprehensive-plans-start-from-just-8-fee-which-can-t-be-found-elsewhere{
-    font-size: 12px;
+    font-size: 16px;
   }
   .gallery-img {
     width: 400px;
@@ -606,4 +622,41 @@
   }
   
 
+}
+
+/* Tablet vừa và nhỏ hơn */
+@media (max-width: 768px) {
+  .tagline-item.second {
+    margin-left: 1rem; /* Hoặc điều chỉnh tuỳ theo bố cục */
+  }
+
+  .tagline-item.third {
+    margin-left: 2rem; /* Giảm so với desktop để vừa mobile */
+  }
+  .tagline-item.first{
+    margin-left: -100px;
+  }
+}
+
+/* Điện thoại nhỏ hơn */
+@media (max-width: 480px) {
+  .tagline-item.first{
+    margin-left: -100px;
+  }
+  .tagline-item.second {
+    margin-left: 0.5rem;
+  }
+
+  .tagline-item.third {
+    margin-left: 1rem;
+  }
+
+  .tagline-item {
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+
+  .right, .people {
+    font-size: 1rem; /* Thu nhỏ chữ cho dễ đọc */
+  }
 }

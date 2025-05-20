@@ -63,9 +63,10 @@ const About = () => {
                   <img src={Logo3} alt="Logo 2" className="logo-img" />
                 </div>
                 <div className="rectangle-text">
-                  <h3 className="rectangle-title optimize-your-listing">OPTIMIZE YOUR LISTING</h3>
+                  <h3 className="rectangle-title optimize-your-listing">24/7 GUEST SERVICE</h3>
                   <p className="rectangle-description">
-                    From professional photos to SEO crafted titles and descriptions, our in-house marketing team will boost your listing visibility and bookings to new heights.
+                    
+Our professional team aims for nothing less than a five star review after every stay. Translation? No more late night guest calls for you.
                   </p>
                 </div>
               </div>
@@ -78,9 +79,9 @@ const About = () => {
                   <img src={Logo2} alt="Logo 3" className="logo-img" />
                 </div>
                 <div className="rectangle-text">
-                  <h3 className="rectangle-title optimize-your-listing">OPTIMIZE YOUR LISTING</h3>
+                  <h3 className="rectangle-title optimize-your-listing">DESIGNED TO BOOK</h3>
                   <p className="rectangle-description">
-                    From professional photos to SEO crafted titles and descriptions, our in-house marketing team will boost your listing visibility and bookings to new heights.
+                    Need help with interior design? Our in house designer creates sophisticated, scroll-stopping spaces that drive bookings and 5-star reviews.
                   </p>
                 </div>
               </div>

@@ -11,10 +11,11 @@ const What = () => {
 
       <p className="what-description">
         <span className="what-description-regular">
-          We proudly provide comprehensive management services at an
+          We proudly provide comprehensive management services at
         </span>
+        <br/>
         <span className="what-description-bold">
-          unbeatable low management fee
+          an unbeatable low management fee
         </span>
       </p>
       

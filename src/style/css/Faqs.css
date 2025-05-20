@@ -63,7 +63,8 @@
 }
 
 .faq-question {
-  flex-grow: 1;
+  font-family: "Raleway-Bold", sans-serif;
+    flex-grow: 1;
   font-weight: 600;
   font-size: 20px;
   margin: 0 1rem;
@@ -85,10 +86,12 @@
 }
 
 .faq-answer {
+    font-family: "Raleway-Bold", sans-serif;
+
   padding: 0 1.5rem 1.5rem 3.7rem; /* Giảm padding trái cho phù hợp */
   color: #495057;
-  line-height: 1.6;
-  font-size: 23px;
+  line-height: 1;
+  font-size: 18px;
   animation: fadeIn 0.3s ease;
 }
 

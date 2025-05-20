@@ -18,49 +18,58 @@ const Form = () => {
     });
   };
 
-  const handleEstimate = async (e) => {
-    e.preventDefault(); 
+const handleEstimate = async (e) => {
+  e.preventDefault(); 
 
-    if (!formData.consent) {
-      alert('Please agree to receive communications');
-      return;
-    }
+  const { name, email, phone, consent } = formData;
 
-    const rentalData = {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      address: null, 
-      bedrooms: null, 
-      bathrooms: null, 
-      amenitiesCount: null
-    };
+  // ✅ Kiểm tra consent
+  if (!consent) {
+    alert('⚠️ Please agree to receive communications.');
+    return;
+  }
 
-    console.log('--- Rental Form Data ---', rentalData);
+  // ✅ Kiểm tra các trường bắt buộc đã điền chưa
+  if (!name || !email || !phone) {
+    alert('⚠️ Please fill in all required fields: Name, Email, and Phone.');
+    return;
+  }
 
-    try {
-      const response = await fetch('http://192.30.139.219:3002/api/send-mail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(rentalData),
-        credentials: 'include'
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        alert('✅ Email sent and data saved!');
-      } else {
-        console.error('❌ Error:', result.message);
-        alert('❌ Failed to send email.');
-      }
-    } catch (error) {
-      console.error('❌ Request failed:', error);
-      alert('❌ Network error.');
-    }
+  const rentalData = {
+    name,
+    email,
+    phone,
+    address: null, 
+    bedrooms: null, 
+    bathrooms: null, 
+    amenitiesCount: null
   };
+
+  console.log('--- Rental Form Data ---', rentalData);
+
+  try {
+    const response = await fetch('http://192.30.139.219:3002/api/send-mail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(rentalData),
+      credentials: 'include'
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert('✅ Email sent and data saved!');
+    } else {
+      console.error('❌ Error:', result.message);
+      alert('❌ Failed to send email.');
+    }
+  } catch (error) {
+    console.error('❌ Request failed:', error);
+    alert('❌ Network error.');
+  }
+};
 
   return (
     <div className="contact-form-container">
@@ -77,7 +86,7 @@ const Form = () => {
           <label className="form-label">Your Name</label>
           <input
             type="text"
-            className="form-input"
+            className="form-input1"
             name="name"
             value={formData.name}
             onChange={handleInputChange}
@@ -89,7 +98,7 @@ const Form = () => {
           <label className="form-label">Phone Number</label>
           <input
             type="tel"
-            className="form-input"
+            className="form-input1"
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
@@ -101,7 +110,7 @@ const Form = () => {
           <label className="form-label">Email</label>
           <input
             type="email"
-            className="form-input"
+            className="form-input1"
             name="email"
             value={formData.email}
             onChange={handleInputChange}

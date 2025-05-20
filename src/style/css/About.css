@@ -63,6 +63,7 @@
   
   .about {
     color: #000000;
+    margin-top: 100px;
     font-family: "Raleway-SemiBold", sans-serif;
     font-size: 18px;
     letter-spacing: 0.38em;
@@ -254,6 +255,7 @@
   }
   
   .rectangle-text {
+    margin-left: 15px;
     flex: 1;
   }
   
@@ -264,13 +266,23 @@
     color: #000;
     margin-bottom: 10px;
   }
-  
-  .rectangle-description {
-    font-family: "Raleway-Light", sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #555;
-  }
+  @font-face {
+  font-family: "Raleway-Light";
+  src: url("../../assets/font/Raleway-Light.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+ .rectangle-description {
+  font-size: 20px;
+  font-family: "Raleway-ExtraLight", sans-serif;
+  font-weight: 200;
+  line-height: 1.31; /* tương đương 130.87% */
+  color: #000000;
+  text-align: left;
+  -webkit-text-stroke: 0.6px #000000;
+}
+
   
   /* Responsive adjustments */
   
@@ -298,15 +310,16 @@
 }
 
 .logo-img {
-  margin-top: 120px;
-  max-width: 230px;  /* Điều chỉnh kích thước logo tùy ý */
-  max-height: 160px;
-  object-fit: contain;
+    margin-top: 50px;
+    max-width: 150px;
+    max-height: 160px;
+    object-fit: contain;
 }
 
-
 .text-every{
+  margin-left:-2px;
   margin-top: -50px;
+  -webkit-text-stroke: 0.6px #000000;
 }
 
 
@@ -326,12 +339,31 @@
   .right-section{
     margin-top: -10px;
   }
+  .every-property-neighborhood-and-owner-are-different {
+    color: #000000;
+    margin-left: 0px;
+    font-family: "Raleway-ExtraLight", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: -60px;
+    line-height: 1.5;
+    max-width: 80%;
+}
+.about {
+    color: #000000;
+    font-family: "Raleway-SemiBold", sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.38em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
   .your-needs {
-    margin-top: -35px;
+    margin-top: 5px;
     color: #841617;
     text-align: left;
     font-family: "HolidayFree", sans-serif;
-    font-size: 60px;
+    font-size: 120px;
     font-weight: 400;
     line-height: 1;
     margin-bottom: 40px;

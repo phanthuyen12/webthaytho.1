@@ -49,7 +49,7 @@ const Operation = () => {
       desc: "Professional cleaning and turnover services for impeccable guest experiences.",
     },
       {
-      title: "MANTENANCE MANAGEMENT",
+      title: "MAINTENANCE MANAGEMENT",
       desc: "Proactive coordination of all property maintenance tasks, ensuring optimal property condition",
     },
         {
@@ -95,64 +95,92 @@ const Operation = () => {
           {cards.map((card, index) => (
             <Box key={index} sx={{ px: { xs: 1, sm: 2 }, pb: 1 }}>
               <Card
-                sx={{
-                  height: '100%',
-                  minHeight: { xs: '350px', sm: '400px', md: '450px' },
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  borderRadius: '50px',
-                  boxShadow: 4,
-                  transition: 'transform 0.3s, box-shadow 0.3s',
-                 background: (index % 2 === 0)
-                    ? 'radial-gradient(circle at 80% center, #a0cbe8 0%, #d4eaf6 40%, #ffffff 80%)'
-                    : 'white',
-                  '&:hover': {
-                    transform: 'translateY(-5px)',
-                    boxShadow: 6
-                  }
-                }}
-              >
-                <CardContent sx={{ 
-                  p: { xs: 3, sm: 4 },
-                  textAlign: 'left'
-                }}>
-                  <Typography 
-                    variant="h6" 
-                    sx={{ 
-                      fontWeight: 'bold',
-                      mb: 2,
-                      color: '#323232',
-                      fontSize: { 
-                        xs: '22px', 
-                        sm: '26px', 
-                        md: '30px', 
-                        lg: '40px' 
-                      },
-                      fontFamily: '"Raleway-Bold", sans-serif',
-                      textTransform: 'uppercase',
-                      lineHeight: 1.2
-                    }}
-                  >
-                    {card.title}
-                  </Typography>
-                  <Typography 
-                    variant="body1" 
-                    sx={{ 
-                      color: '#323232',
-                      fontSize: { 
-                        xs: '16px', 
-                        sm: '18px', 
-                        md: '20px', 
-                        lg: '24px' 
-                      },
-                      fontFamily: '"Raleway-Regular", sans-serif',
-                      lineHeight: 1.4
-                    }}
-                  >
-                    {card.desc}
-                  </Typography>
-                </CardContent>
+                              sx={{
+                                height: '100%',
+              minHeight: { xs: '280px', sm: '330px', md: '380px' },                  
+              display: 'flex',
+                                flexDirection: 'column',
+                                paddingTop:'60px',
+                                justifyContent: 'left',
+                                borderRadius: '50px',
+                                boxShadow: 4,
+                                transition: 'transform 0.3s, box-shadow 0.3s',
+                                background: ([0, 2, 4].includes(index))
+  ? 'radial-gradient(circle at 80% center, #a0cbe8 0%, #d4eaf6 40%, #ffffff 80%)'
+  : 'white',
+
+                                '&:hover': {
+                                  transform: 'translateY(-5px)',
+                                  boxShadow: 6
+                                }
+                              }}
+                            >
+           <CardContent sx={{ 
+  p: { xs: 3, sm: 4 },
+  display: 'flex',
+  flexDirection: 'column',
+  height: '100%',
+  textAlign: 'left' // Thêm thuộc tính này
+}}>
+  {/* Title */}
+  <Box sx={{ 
+    height: { xs: '80px', md: '100px' },
+    display: 'flex',
+    alignItems: 'flex-start', // Thay đổi thành 'flex-start'
+    justifyContent: 'flex-start', // Thêm dòng này
+    mb: 2
+  }}>
+    <Typography 
+      variant="h6" 
+      sx={{ 
+        fontWeight: 'bold',
+        color: '#323232',
+        fontSize: '33px',
+        fontFamily: '"Raleway-Bold", sans-serif',
+        textTransform: 'uppercase',
+        lineHeight: 1.2,
+        display: '-webkit-box',
+        WebkitLineClamp: 3,
+        WebkitBoxOrient: 'vertical',
+        overflow: 'hidden',
+        textAlign: 'left' // Thêm dòng này
+      }}
+    >
+      {card.title}
+    </Typography>
+  </Box>
+
+  {/* Desc */}
+  <Box sx={{ 
+    flex: 1,
+    display: 'flex',
+    alignItems: 'flex-start', // Thay đổi thành 'flex-start'
+    justifyContent: 'flex-start' // Thêm dòng này
+  }}>
+    <Typography 
+      variant="body1" 
+      sx={{ 
+        color: '#323232',
+        fontSize: { 
+          xs: '16px', 
+          sm: '18px', 
+          md: '20px', 
+          lg: '24px' 
+        },
+        marginTop:"10px",
+        fontFamily: '"Raleway-Regular", sans-serif',
+        lineHeight: 1.4,
+        display: '-webkit-box',
+        WebkitLineClamp: 5,
+        WebkitBoxOrient: 'vertical',
+        overflow: 'hidden',
+        textAlign: 'left' // Thêm dòng này
+      }}
+    >
+      {card.desc}
+    </Typography>
+  </Box>
+</CardContent>
               </Card>
             </Box>
           ))}

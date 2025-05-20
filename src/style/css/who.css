@@ -5,6 +5,16 @@
   font-style: normal;
   font-display: swap;
 }
+.optimize-your-listing-who{
+  text-align: left;
+  font-family: "Raleway-ExtraBold", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 @font-face {
   font-family: "Raleway-ExtraBold";
@@ -42,8 +52,8 @@
   border-radius: 30px;
   color: #ffffff;
   font-size: 39px;
-  width: 351px;
-  height: 80px;
+  width: 161px;
+  /* height: 80px; */
   margin: 20px auto;
   display: block;
   box-shadow: 8px 16px 24px -1px rgba(0, 0, 0, 0.37);

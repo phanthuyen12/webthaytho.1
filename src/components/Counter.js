@@ -20,7 +20,9 @@ const Counter = ({ value, onChange, minValue = 1, counterStyle = {} }) => {
     borderRadius: '10px',
     background: '#fff',
     padding: '6px 12px',
-    gap: '12px'
+    gap: '12px',
+        borderRadius:'20px',
+
   };
 
   const btnStyle = {

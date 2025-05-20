@@ -89,14 +89,63 @@ body, html {
   font-display: swap;
 }
 @font-face {
-  font-family: "Raleway-Light";
-  src: url("./assets/font/Raleway-Light.ttf") format("opentype");
+  font-family: "Raleway-Italic";
+  src: url("./assets/font/Raleway-Italic.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("./assets/font/Raleway-ExtraBold.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("./assets/font/Raleway-SemiBold.ttf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @media (max-width: 1024px) {
+  .tagline-item.first {
+    margin-left: -90px;
+}
+.tagline-item.second {
+  margin-left: -105px;
+}
+.we-re-built-on {
+    color: #000000;
+    font-family: "Raleway-SemiBold", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: -40px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .performance-title,
+  .performance-subtitle,
+  .MuiTypography-h6 {
+    font-weight: 500 !important;
+    font-family: 'Raleway-Medium', sans-serif !important;
+  }
+}
+
+.tagline-item.third {
+  margin-left: 0px;
+}
+  .testimonial-nav {
+    margin-left: -20px;
+    display: flex; /* Đảm bảo là Flexbox */
+    justify-content: center; /* Canh giữa theo trục ngang */
+    align-items: center; /* (tuỳ chọn) Canh giữa theo trục dọc nếu cần */
+    margin-top: 1rem; /* Tuỳ chỉnh */
+  }
+
   .maximize-your-rental-income {
     font-size: 40px;
     line-height: 1.1;
@@ -129,19 +178,32 @@ body, html {
 }
 @media (min-width: 1441px) and (max-width: 1919px) {
  .optimize-your-listing {
-    font-size: 30px;
+    font-size: 27px;
   }
   .rectangle-description{
     font-size: 18px;
   }
   .maximize-your-rental-income {
-    font-size: 80px;
+    font-size: 74px;
     line-height: 1.2; /* thêm nếu muốn khác */
   }
  .rectangle-container1{
   margin-top: -100px;
  }
        .who {
-        margin-top: -50px;
+        margin-top: 140px;
     }
+}
+.get-started {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Raleway-ExtraBold", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    position: relative;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-stroke: 1px #000000;
 }

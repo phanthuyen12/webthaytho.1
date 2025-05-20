@@ -25,7 +25,7 @@ const HeroSection = () => {
             left: 0
           }}
         >
-          <source src={videosbackground} type="video/mp4" />
+          <source src={videosbackground} type="video/mp4"  />
           <source src="path-to/webm-version.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>

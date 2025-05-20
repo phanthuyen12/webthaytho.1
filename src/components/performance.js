@@ -87,10 +87,11 @@ const Performance = () => {
               <Card
                 sx={{
                   height: '100%',
-                  minHeight: { xs: '350px', sm: '400px', md: '450px' },
-                  display: 'flex',
+minHeight: { xs: '280px', sm: '330px', md: '380px' },                  
+display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'center',
+                  paddingTop:'60px',
+                  justifyContent: 'left',
                   borderRadius: '50px',
                   boxShadow: 4,
                   transition: 'transform 0.3s, box-shadow 0.3s',
@@ -104,45 +105,72 @@ const Performance = () => {
                 }}
               >
                 <CardContent sx={{ 
-                  p: { xs: 3, sm: 4 },
-                  textAlign: 'left'
-                }}>
-                  <Typography 
-                    variant="h6" 
-                    sx={{ 
-                      fontWeight: 'bold',
-                      mb: 2,
-                      color: '#323232',
-                      fontSize: { 
-                        xs: '22px', 
-                        sm: '26px', 
-                        md: '30px', 
-                        lg: '40px' 
-                      },
-                      fontFamily: '"Raleway-Bold", sans-serif',
-                      textTransform: 'uppercase',
-                      lineHeight: 1.2
-                    }}
-                  >
-                    {card.title}
-                  </Typography>
-                  <Typography 
-                    variant="body1" 
-                    sx={{ 
-                      color: '#323232',
-                      fontSize: { 
-                        xs: '16px', 
-                        sm: '18px', 
-                        md: '20px', 
-                        lg: '24px' 
-                      },
-                      fontFamily: '"Raleway-Regular", sans-serif',
-                      lineHeight: 1.4
-                    }}
-                  >
-                    {card.desc}
-                  </Typography>
-                </CardContent>
+                                p: { xs: 3, sm: 4 },
+                                display: 'flex',
+                                flexDirection: 'column',
+                                height: '100%',
+                                textAlign: 'left' // Thêm thuộc tính này
+                              }}>
+                                {/* Title */}
+                                <Box sx={{ 
+                                  height: { xs: '80px', md: '100px' },
+                                  display: 'flex',
+                                  alignItems: 'flex-start', // Thay đổi thành 'flex-start'
+                                  justifyContent: 'flex-start', // Thêm dòng này
+                                  mb: 2
+                                }}>
+                                  <Typography 
+                 variant="h6" 
+                 sx={{ 
+                   fontWeight: { xs: 500, sm: 600, md: 700 },
+                   color: '#323232',
+                   fontSize: { xs: '24px', sm: '28px', md: '33px' }, // cũng nên giảm size mobile
+                   fontFamily: { xs: '"Raleway-Medium", sans-serif', md: '"Raleway-Bold", sans-serif' },
+                   textTransform: 'uppercase',
+                   lineHeight: 1.2,
+                   display: '-webkit-box',
+                   WebkitLineClamp: 3,
+                   WebkitBoxOrient: 'vertical',
+                   overflow: 'hidden',
+                   textAlign: 'left'
+                 }}
+               >
+                 {card.title}
+               </Typography>
+               
+                                </Box>
+                              
+                                {/* Desc */}
+                                <Box sx={{ 
+                                  flex: 1,
+                                  display: 'flex',
+                                  alignItems: 'flex-start', // Thay đổi thành 'flex-start'
+                                  justifyContent: 'flex-start' // Thêm dòng này
+                                }}>
+                                  <Typography 
+                                    variant="body1" 
+                                    sx={{ 
+                                      color: '#323232',
+                                      fontSize: { 
+                                        xs: '16px', 
+                                        sm: '18px', 
+                                        md: '20px', 
+                                        lg: '24px' 
+                                      },
+                                      marginTop:"10px",
+                                      fontFamily: '"Raleway-Regular", sans-serif',
+                                      lineHeight: 1.4,
+                                      display: '-webkit-box',
+                                      WebkitLineClamp: 5,
+                                      WebkitBoxOrient: 'vertical',
+                                      overflow: 'hidden',
+                                      textAlign: 'left' // Thêm dòng này
+                                    }}
+                                  >
+                                    {card.desc}
+                                  </Typography>
+                                </Box>
+                              </CardContent>
               </Card>
             </Box>
           ))}

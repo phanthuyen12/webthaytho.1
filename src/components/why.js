@@ -9,6 +9,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Rectangle6 from '../assets/Why Toshi 1.png';
 import Rectangle9 from '../assets/Why Toshi 2.png';
 import Rectangle10 from '../assets/Why Toshi 3.png';
+import User1 from '../assets/Jessica.jpg';
+import User2 from '../assets/Miles.jpg';
+import User3 from '../assets/Bonnie.jpg';
+import User4 from '../assets/Andrew.jpg';
 import TransparentLogo from '../assets/Transparent text logo 4.png';
 const highlightWords = ["game changer", "actually care", "hotel-level", "transparency"];
 const isMobile = window.innerWidth <= 3840; // bạn có thể dùng useMediaQuery nếu xài MUI
@@ -19,28 +23,31 @@ const testimonials = [
     name: "Miles",
     revenue: "$17K Monthly Revenue",
     occupancy: "84% Occupancy Rate",
+    image: User2,
   },
   {
     text: "With Toshi Stay, I found transparency, honesty, and unbeatable value",
     name: "Bonnie",
     revenue: "$9K Monthly Revenue",
     occupancy: "89% Occupancy Rate",
+    image: User3,
   },
   {
     text: "Their hotel-level support team means every guest is treated exceptionally. Our reviews and bookings have skyrocketed",
     name: "Andrew",
     revenue: "$37K Monthly Revenue",
-    occupancy: "78% Occupancy Rate  ",
+    occupancy: "78% Occupancy Rate",
+    image: User4, // tạm dùng lại hình Jessica
   },
-
   {
     text: "Switching to Toshi Stay has been a game changer. Paying just 8% and getting amazing service around the clock is unbelievable",
     name: "Jessica",
     revenue: "$22K Monthly Revenue",
     occupancy: "90% Occupancy Rate",
+    image: User1,
   },
-
 ];
+
 
 const Why = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // State to manage current testimonial
@@ -101,46 +108,38 @@ const galleryItems = [
     desc: 'Our experts personally manage every detail of your rental property. You’ll know our names, and we’ll know yours',
   },
 ];
- const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-    autoplay: !isMobile, // Tắt autoplay trên mobile
-  autoplaySpeed: 3000,
-  slidesToShow: 3, // Mặc định hiển thị 3 slides
-          arrows: false ,
-
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 992, // Tablet landscape và nhỏ hơn
-      settings: {
-        slidesToShow: 2, // Hiển thị 2 slides
-        slidesToScroll: 1
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
       }
-    },
-    {
-      breakpoint: 768, // Tablet portrait và nhỏ hơn
-      settings: {
-        slidesToShow: 1, // Hiển thị 1 slide
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480, // Mobile nhỏ
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false // Ẩn mũi tên điều hướng trên mobile
-      }
-    }
-  ]
-};
+    ]
+  };
 
   return (
+    
     <div className="why-section" style={{ backgroundColor: '#F3EFE9' }}>
+      
   <div className='container py-5'>
-    <div className="why-container">
+    
+    <div className="">
+      
         {/* Why Title */}
         <div className="why-header">
           <h1 className="why-title">Why</h1>
@@ -166,7 +165,7 @@ const galleryItems = [
                   {item.desc}
                 </div>
                 <div className="group-4">
-                <div className="let-s-talk rectangle-31 ">Let’s talk</div>
+                <div className="let-s-talk rectangle-31 get-started">Let’s talk</div>
                 </div>
               </div>
             </div>
@@ -221,7 +220,9 @@ const galleryItems = [
                   />
                 </div>
                 <div className="client-info">
-                  <div className="client-avatar"></div>
+<div className="client-avatar">
+  <img src={testimonials[index].image} alt={testimonials[index].name} className="avatar-img" />
+</div>
                   <div className="client-details">
                     <div className="client-name">{testimonials[index].name}</div>
                     <div className="client-stats">

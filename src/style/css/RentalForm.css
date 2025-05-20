@@ -6,6 +6,44 @@
     padding: 20px; */
     font-family: 'Raleway', Arial, sans-serif;
   }
+  .amenities-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  color: #000;
+  text-align: left;
+  width: 200px;
+  z-index: 10;
+  margin-top: 8px;
+}
+
+.amenities-title {
+  
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.amenities-box form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.amenities-box form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.amenities-box form label {
+  font-size: 14px;
+}
+
+/* Ensure the form-row has enough space below to accommodate the amenities box */
+.form-row {
+  position: relative;
+  margin-bottom: 100px; /* Adjust this value based on the height of the amenities box */
+}
   /* Đặt các phần tử cần ẩn trong các thiết bị nhỏ */
 .maximize-your-rental-income,
 .group-1,
@@ -234,7 +272,9 @@
 .address-input {
   width: 100%;
   padding: 10px;
-  font-size: 14px;
+  font-size: 20px;
+    font-family: "Raleway-ExtraLight", sans-serif;
+
   
   border-radius: 20px;
   border: 1px solid #ccc;

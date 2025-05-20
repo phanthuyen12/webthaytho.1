@@ -24,7 +24,7 @@ const Who = () => {
     
     {/* <div class="get-started">Get Started</div> */}
      <Link to="formSection" smooth={true} duration={500}>
-       <button className="rectangle-3">  Get Started</button>
+       <button className="rectangle-3 get-started">  Get Started</button>
      </Link>
   </div>
 </div>
@@ -40,7 +40,7 @@ const Who = () => {
       <div className="rectangle-content">
         
         <div className="rectangle-text">
-          <h3 className="rectangle-title optimize-your-listing">Second Home Owners</h3>
+          <h3 className="rectangle-title optimize-your-listing-who">Second Home Owners</h3>
           <p className="rectangle-description">
           Turn your additional home into a steady stream of passive income without the hassle.          </p>
         </div>
@@ -52,7 +52,7 @@ const Who = () => {
       <div className="rectangle-content">
        
         <div className="rectangle-text">
-          <h3 className="rectangle-title optimize-your-listing">Current Hosts Seeking Better Results</h3>
+          <h3 className="rectangle-title optimize-your-listing-who">Current Hosts Seeking Better Results</h3>
           <p className="rectangle-description">
           Disappointed by the performance? Let our experts boost your bookings and revenue.          </p>
         </div>
@@ -64,7 +64,7 @@ const Who = () => {
       <div className="rectangle-content">
        
         <div className="rectangle-text">
-          <h3 className="rectangle-title optimize-your-listing" >Out Of State Investors</h3>
+          <h3 className="rectangle-title optimize-your-listing-who" >Out Of State Investors</h3>
           <p className="rectangle-description">
           Maximize returns on your investment properties without lifting a finger—our dedicated team handles it all.          </p>
         </div>
@@ -75,7 +75,17 @@ const Who = () => {
       <div className="rectangle-content">
        
         <div className="rectangle-text">
-          <h3 className="rectangle-title optimize-your-listing" >Developers & Home Builders</h3>
+          <h3 className="rectangle-title optimize-your-listing-who" >Developers & Home Builders</h3>
+          <p className="rectangle-description">
+          Bridge the gap between project completion and sale by generating valuable rental income in the interim.          </p>
+        </div>
+      </div>
+    </div>
+     <div className="rectangle-23">
+      <div className="rectangle-content">
+       
+        <div className="rectangle-text">
+          <h3 className="rectangle-title optimize-your-listing-who" >Developers & Home Builders</h3>
           <p className="rectangle-description">
           Bridge the gap between project completion and sale by generating valuable rental income in the interim.          </p>
         </div>

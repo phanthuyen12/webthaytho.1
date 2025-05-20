@@ -5,7 +5,7 @@
   border-radius: 40px;
   max-width: 800px;
   margin: 100px auto 0 auto; /* Thêm khoảng cách phía trên */
-  padding: 40px 30px;
+  padding: 40px 99px;
 }
 
 /* Background */
@@ -38,7 +38,7 @@
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   line-height: 1.4;
 }
 
@@ -64,11 +64,11 @@
   margin-bottom: 10px;
 }
 
-.form-input {
+.form-input1 {
+  border-radius: 20px;
+background: white;
   border: none;
-  border-bottom: 2px solid #323232;
-  background: transparent;
-  padding: 8px 0;
+  padding: 8px 0 8px 30px; /* 👈 sửa lại để áp dụng padding trái */
   font-size: 1rem;
   font-family: "Raleway-Regular", sans-serif;
   outline: none;
@@ -146,7 +146,9 @@
 }
 
 .checkbox-label {
-  color: #999; /* Màu xám khi chưa chọn */
+    font-family: "Raleway-Italic", sans-serif;
+
+  color: #161616; /* Màu xám khi chưa chọn */
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -156,6 +158,7 @@
 }
 
 .submit-button {
+  margin-top: -30px;
   background-color: #841618;
   color: white;
   border: none;
